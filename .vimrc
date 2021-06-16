@@ -1,4 +1,3 @@
-
 " Enable the use of the mouse for all modes
 set mouse=r
 
@@ -34,6 +33,7 @@ set softtabstop=2
 " Smart indent lines
 set smartindent
 
+" Show the current row and column position
 set ruler
 
 " Replace pesky beep sound with visual bell...
@@ -47,20 +47,53 @@ set backspace=indent,eol,start
 " Set update interval to 100ms instead of 4000ms (reduce gitgutter update time)
 set updatetime=100
 
+" Stop vim from automatically adding a linebreak at the end of a file
+set nofixendofline
+
+" Enable syntax highlighting
+syntax on
+
+" Allow intelligent auto-indenting for each filetype, and for plugins that are filetype-specific
+filetype indent plugin on
+
+
+""" COLORS
+
+" Change Pmenu background color from pink to something less painful to look at
+highlight Pmenu ctermbg=Black ctermfg=White
+
+" Change SignColumn background to Black
+highlight SignColumn ctermbg=Black
+
+" Recolor vim-gitgutter signs
+highlight GitGutterAdd ctermbg=Black ctermfg=Green
+highlight GitGutterChange ctermbg=Black ctermfg=LightBlue
+highlight GitGutterChangeDelete ctermbg=Black ctermfg=LightBlue
+highlight GitGutterDelete ctermbg=Black ctermfg=Red
+
+" Recolor ALE lints
+highlight ALEError ctermbg=DarkRed ctermfg=White
+highlight ALEErrorSign ctermbg=Black ctermfg=Red
+highlight ALEWarning ctermbg=DarkYellow ctermfg=White
+highlight ALEWarningSign ctermbg=Black ctermfg=DarkYellow
+
+" Recolor Coc lints
+"highlight CocErrorHighlight ctermfg=Red cterm=underline
+"highlight CocErrorFloat ctermbg=Black ctermfg=Black
+"highlight CocWarningHighlight ctermfg=DarkYellow cterm=underline
+"highlight CocWarningFloat ctermbg=DarkYellow ctermfg=Black
+"highlight CocInfoHighlight ctermfg=DarkGreen cterm=underline
+"highlight CocInfoFloat ctermbg=DarkGreen ctermfg=Black
+"highlight CocInfoSign ctermbg=Black ctermfg=Green
+
 
 """ CUSTOM VMAPS
 
-" Replace selected text region with current buffer without copying
+" r: Replace selected text region with current buffer without copying
 "vmap r "_dP
 
-" Shorthand for deleting selected text region without saving it to the buffer
+" d: Shorthand for deleting selected text region without saving it to the buffer
 "vmap d "_d
-
-
-""" PATHOGEN
-
-" Execute pathogen
-"execute pathogen#infect()
 
 
 """ VIM AIRLINE
@@ -72,19 +105,10 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#left_sep = ' '
 let g:airline#extensions#tabline#left_alt_sep = '|'
 
-" unique_tail_improved as default path formatter
+" Use unique_tail_improved as default path formatter
 let g:airline#extensions#tabline#formatter = 'unique_tail_improved'
 
 " Enable powerline fonts for airline
 let g:airline_powerline_fonts = 1
 
 let g:powerline_pycmd = 'py3'
-
-
-""" MISC
-
-" Enable syntax highlighting
-syntax on
-
-" Allow intelligent auto-indenting for each filetype, and for plugins that are filetype-specific
-filetype indent plugin on
