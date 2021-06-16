@@ -1,0 +1,12 @@
+{
+  "languageserver": {
+  },
+
+  "diagnostic.displayByAle": false,
+
+  "git.addedSign.hlGroup": "GitGutterAdd",
+  "git.changedSign.hlGroup": "GitGutterChange",
+  "git.changeRemovedSign.hlGroup": "GitGutterChangeDelete",
+  "git.removedSign.hlGroup": "GitGutterDelete",
+  "git.topRemovedSign.hlGroup": "GitGutterDelete"
+}

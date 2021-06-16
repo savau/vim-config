@@ -1,0 +1,27 @@
+{
+  "languageserver": {
+    "haskell": {
+      "command": "haskell-language-server-wrapper",
+      "args": [ "--lsp" ],
+      "rootPatterns": [
+        "*.cabal",
+        "stack.yaml",
+        "cabal.project",
+        "package.yaml",
+        "hie.yaml"
+      ],
+      "filetypes": [
+        "haskell",
+        "lhaskell"
+      ]
+    }
+  },
+
+  "diagnostic.displayByAle": false,
+
+  "git.addedSign.hlGroup": "GitGutterAdd",
+  "git.changedSign.hlGroup": "GitGutterChange",
+  "git.changeRemovedSign.hlGroup": "GitGutterChangeDelete",
+  "git.removedSign.hlGroup": "GitGutterDelete",
+  "git.topRemovedSign.hlGroup": "GitGutterDelete"
+}
