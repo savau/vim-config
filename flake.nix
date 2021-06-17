@@ -1,7 +1,7 @@
 {
   outputs = { ... }:
   {
-    neovim = {
+    neovim = { pkgs, ... }: {
       home-manager.users.savau = {
         programs.neovim = {
           enable = true;
@@ -18,5 +18,5 @@
         home.file.".config/nvim/coc-settings.json".text = builtins.readFile ./nvim/coc-settings/basic.json;
       };
     };
-  }
+  };
 }
