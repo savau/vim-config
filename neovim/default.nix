@@ -18,9 +18,9 @@ in
       airline
       fugitive
       vim-nix
-    ] // if coc.enable then coc.plugins else [];
+    ] ++ (if coc.enable then coc.plugins else []);
     extraConfig = builtins.readFile ../.vimrc;
   };
-} // if coc.enable then {
+} // (if coc.enable then {
   home.file.".config/nvim/coc-settings.json".text = coc.settings;
-} else {}
+} else {})
