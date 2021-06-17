@@ -15,7 +15,7 @@
           ];
           extraConfig = builtins.readFile ./.vimrc;
         };
-        home.file.".config/nvim/coc-settings.json".text = builtins.readFile ./nvim/coc-settings/basic.json;
+        home.file.".config/nvim/coc-settings.json".text = builtins.readFile ./neovim/coc/basic/settings.json;
       };
     };
   };
