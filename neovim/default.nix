@@ -1,4 +1,5 @@
 { pkgs, ... }:
+
 let
   coc = {
     enable = true;
