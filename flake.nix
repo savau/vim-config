@@ -1,7 +1,7 @@
 {
   outputs = { ... }:
   {
-    neovim = args: {
+    neovim = args@{ pkgs, ... }: {
       home-manager.users.savau = import ./neovim args;
     };
   };
