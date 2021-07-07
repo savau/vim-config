@@ -1,11 +1,11 @@
 # vim-config
-My personal Vim configuration
+My personal Vim/Neovim configuration
 
-## System-wide Vim configuration
+## System-wide Vim/Neovim configuration
 
-On NixOS: See [vim.nix @ nixos-config](https://github.com/savau/nixos-config/blob/main/modules/vim.nix).
+On NixOS: See [vim.nix @ vim-config](https://github.com/savau/vim-config/blob/main/neovim/default.nix).
 
-## Single-user Vim configuration
+## Single-user Vim/Neovim configuration
 
 ```
 $ git clone git@github.com:savau/vim-config.git ~/.config/vim
