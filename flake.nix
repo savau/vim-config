@@ -1,9 +1,9 @@
-{ username }:
+{ userName }:
 {
   outputs = { ... }:
   {
     neovim = args@{ pkgs, ... }: {
-      home-manager.users.${username} = import ./neovim args;
+      home-manager.users.${userName} = import ./neovim args;
     };
   };
 }
