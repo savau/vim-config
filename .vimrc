@@ -1,5 +1,5 @@
 " Enable the use of the mouse for all modes
-set mouse=r
+set mouse=a
 
 " Show line numbers
 set number
