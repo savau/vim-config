@@ -123,4 +123,5 @@ autocmd VimEnter * NERDTree
 autocmd VimEnter * wincmd p
 " ... and also quit vim if there is no active buffer anymore
 "     besides NERDTree
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+" autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
