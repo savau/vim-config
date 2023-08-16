@@ -112,3 +112,9 @@ let g:airline#extensions#tabline#formatter = 'unique_tail_improved'
 let g:airline_powerline_fonts = 1
 
 let g:powerline_pycmd = 'py3'
+
+
+""" NERDTree
+
+" Automatically start vim with NERDTree opened
+autocmd VimEnter * NERDTree
