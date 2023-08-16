@@ -118,3 +118,6 @@ let g:powerline_pycmd = 'py3'
 
 " Automatically start vim with NERDTree opened
 autocmd VimEnter * NERDTree
+" But move the cursor into the main window when doing so
+" to avoid starting with the cursor in NERDTree
+autocmd VimEnter * wincmd p
