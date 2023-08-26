@@ -51,7 +51,7 @@ set updatetime=100
 set nofixendofline
 
 " Enable syntax highlighting
-syntax on
+syntax enable
 
 " Allow intelligent auto-indenting for each filetype, and for plugins that are filetype-specific
 filetype indent plugin on
@@ -134,3 +134,9 @@ nnoremap <leader>ff <cmd>Telescope find_files<cr>
 nnoremap <leader>fg <cmd>Telescope live_grep<cr>
 nnoremap <leader>fb <cmd>Telescope buffers<cr>
 nnoremap <leader>fh <cmd>Telescope help_tags<cr>
+
+
+""" VimTeX
+
+let g:vimtex_view_general_viewer = 'okular'
+let g:vimtex_view_general_options = '--unique file:@pdf\#src:@line@tex'
