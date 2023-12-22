@@ -12,7 +12,7 @@ set wrap
 " preserve indentation when wrapping lines
 set breakindent
 " add two additional spaces
-let &showbreak='  '
+# let &showbreak='  '
 
 " Allow reusing the same window and switch from an unsaved buffer without saving it first
 " (Also allows undo history for multiple files)
@@ -109,9 +109,9 @@ let g:airline#extensions#tabline#left_alt_sep = '|'
 let g:airline#extensions#tabline#formatter = 'unique_tail_improved'
 
 " Enable powerline fonts for airline
-let g:airline_powerline_fonts = 1
+# let g:airline_powerline_fonts = 1
 
-let g:powerline_pycmd = 'py3'
+# let g:powerline_pycmd = 'py3'
 
 
 """ NERDTree
@@ -138,5 +138,5 @@ nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 
 """ VimTeX
 
-let g:vimtex_view_general_viewer = 'okular'
+let g:vimtex_view_general_viewer = 'evince'
 let g:vimtex_view_general_options = '--unique file:@pdf\#src:@line@tex'
