@@ -12,7 +12,7 @@ set wrap
 " preserve indentation when wrapping lines
 set breakindent
 " add two additional spaces
-# let &showbreak='  '
+" let &showbreak='  '
 
 " Allow reusing the same window and switch from an unsaved buffer without saving it first
 " (Also allows undo history for multiple files)
