@@ -126,6 +126,10 @@ autocmd VimEnter * wincmd p
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 " autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
+" NerdtreePluginOpen: remap default open command from nerdtree to xdg-open
+" for opening non-text files as well as text files
+let g:nerdtree_plugin_open_cmd = 'xdg-open'
+
 
 """ Telescope
 
