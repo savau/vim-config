@@ -140,3 +140,8 @@ nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 
 let g:vimtex_view_general_viewer = 'evince-previewer'
 let g:vimtex_view_general_options = '--unique file:@pdf\#src:@line@tex'
+
+
+""" BBye
+
+nnoremap <Leader>q <cmd>Bwipeout<cr>
